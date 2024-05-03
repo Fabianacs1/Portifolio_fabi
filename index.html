@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>    
+.div1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border: 5px solid rgb(77, 61, 41) ;
+    padding: 50px;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(77, 61, 41);
+    text-align: center;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 61, 41) ;
+}
+.button, a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(231, 206, 177);
+    border-radius: 5px;
+    color: rgb(231, 206, 177);
+    background-color: rgb(77, 61, 41);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+body {
+    background-color: rgb(231, 206, 177);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid rgb(243, 242, 242);
+    padding: 50px;
+}  
+  .button:hover {
+    background-color: #2980b9;
+}
+.a:hover {
+    background-color: #2980b9;
+}
+      </style>
+</head>
+<body>
+    <div class="div1">
+        <br><h1>FABIANA DA SILVA DE CARVALHO</h1>
+         <div class="Seções">
+            <ul id="menu">
+                <a href="https://www.linkedin.com/in/fabiana-carvalho-211451219">Linkedin</a><br>
+                <a href="https://github.com/Fabianacs1/">GitHub</a><br>
+                <button class="button" onclick="window.location.href='#seção-item1'">Sobre Mim</button><br>
+                <button class="button" onclick="window.location.href='#seção-item2'">Formação Acadêmica</button><br>
+                <button class="button" onclick="window.location.href='#seção-item3'">Projetos</button><br>
+                </ul>
+        </div>
+        <div class="div2">
+     <div id="seção-item1">
+         <h2>Sobre Mim</h2>
+     </div> 
+     <div class="TextoSobre">
+         <p>Atualmente, curso Engenharia de Software na UNICESUMAR e busco uma oportunidade desafiadora na área onde possa aplicar meus conhecimentos e habilidades para contribuir para o sucesso da empresa.</p>
+         <p>Meu foco principal está em <strong>desenvolvimento web</strong> e <strong>tecnologias de front-end</strong>, onde tenho experiência com HTML, CSS e JavaScript, além de frameworks como React.js.</p>
+         <p>Tenho interesse em aprender continuamente e participar de projetos inovadores que me permitam crescer profissionalmente e contribuir de forma significativa para a equipe.</p>
+     </div>
+     <div class="div3">
+         <div id="seção-item2">
+             <h2>Formação Acadêmica</h2>
+         </div> 
+         <div class="TextoSobre">
+             CIEE (2017 - 2019)<br>
+             Participei de um programa de aprendizagem em serviços administrativos, acumulando 572 horas de experiência prática e aprimorando minhas habilidades nessa área.<br><br>
+             UPGRADE INFORMÁTICA (2018)<br>
+             Aprimorei minhas habilidades em ferramentas essenciais para o dia a dia profissional, como Excel, PowerPoint, Word, Internet e Mídias.<br><br>
+             BACHAREL EM ENGENHARIA DE SOFTWARE - UNICESUMAR (Em andamento - 2027)<br>
+             Curso em andamento, com grande interesse na área e busca constante por conhecimento e aperfeiçoamento profissional.
+         </div>
+         <div class="div4">
+             <div id="seção-item3">
+                 <h2>Projetos</h2>
+             </div> 
+             <div id="seção-item4"><ul>
+                 <h3>To Do List</h3>
+                 A atividade modelo Aplicada pelo professor de Front End consistia em uma aplicação do tipo TODO list, que simula uma lista de tarefas a serem realizadas, conforme uma tarefa é realizada um estilo é aplicado para riscar a palavra. O objetivo consistia em construir essa mesma estrutura e adicionar as seguintes funcionalidades:<br><br>
+             1) Editar um texto (tarefa) já criado e atualizar isso na lista de tarefas do usuário.<br>
+             2) Criar uma opção (botão ou outra estrutura) que permita o usuário ocultar uma tarefa da lista, mas essa ação só pode ser feita com tarefas na concluídas.<br>
+             3) Criar uma estrutura de estilização (sem biblioteca adicionais) para deixar a aplicação mais bonita e criativa.<br>
+             4) Criar um repositório no GitHub e postar os arquivos no repositório e responder esse fórum com o link do seu repositório implementado.<br>
+             <a href="https://github.com/Fabianacs1/to_do_list.git"/>ToDoList</a><br>
+                 <h3>Gestão de Notas</h3>
+                 Foi proposto trabalho em grupo onde deveriamos desenvolver um  sistema de gestão escolar, que permitirá o cadastro de alunos, o registro de suas notas ao longo do semestre,
+                 o cálculo automático de médias e a determinação do status de aprovação de cada estudante. Com os seguintes requisitos:<br>
+    Cadastro de Alunos<br>
+    Cadastro de Notas<br>
+    Armazenamento com LocalStorage<br>
+    Cálculo de Médias<br>
+    Status de Aprovação<br>
+    Exibição em Tabela HTML<br>
+    <a href="https://github.com/PhCalegari/Trabalho_nota_aluno.git"/>Gestão de Notas</a><br>
+                </ul>              
+   <script>
+       document.addEventListener("DOMContentLoaded", function() {
+           const buttons = document.querySelectorAll('.button');             
+           buttons.forEach(button => {
+               button.addEventListener('mouseover', function() {
+                   this.style.backgroundColor = '#2980b9'; 
+               });                
+               button.addEventListener('mouseout', function() {
+                   this.style.backgroundColor = '#3498db';
+               });
+           });
+       });
+     </script>
+                  
+  </div>
+</div>
+</div>
+</div>
+   
