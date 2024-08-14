@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
                 reposList.appendChild(projectItem);
             });
-
             repos.forEach(repo => {
                 const repoItem = document.createElement('div');
                 repoItem.className = 'project pure-u-1 pure-u-md-1-2';
