@@ -1,12 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const username = 'Fabianacs1';
-    const token = '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';
 
-    fetch(`https://api.github.com/users/${username}/repos`, {
-        headers: {
-            Authorization: `token ${token}`
-        }
-    })
+    fetch(`https://api.github.com/users/${username}/repos`)
     .then(response => {
         if (!response.ok) {
             throw new Error(`Erro ao buscar repositórios: ${response.status} - ${response.statusText}`);
@@ -15,6 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(repos => {
         const reposList = document.getElementById('github-repos-list');
+        if (!reposList) {
+            console.error('Elemento com ID "github-repos-list" não encontrado.');
+            return;
+        }
 
         repos.forEach(repo => {
             const repoItem = document.createElement('div');
